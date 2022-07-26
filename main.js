@@ -3,9 +3,9 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const heartIcon = document.getElementsByClassName('like-glyph');
 
-
-
+heartIcon.addEventListener("click", mimicServerCall)
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
@@ -23,3 +23,4 @@ function mimicServerCall(url="http://mimicServer.example.com", config={}) {
     }, 300);
   });
 }
+
